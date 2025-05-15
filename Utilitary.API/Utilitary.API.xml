@@ -1,0 +1,369 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Utilitary.API</name>
+    </assembly>
+    <members>
+        <member name="T:Utilitary.API.Controllers.Common.BaseController">
+            <summary> 
+            
+            </summary>
+        </member>
+        <member name="P:Utilitary.API.Controllers.Common.BaseController.Mediador">
+            <summary> 
+            
+            </summary>
+        </member>
+        <member name="T:Utilitary.API.Controllers.Common.CustomExceptionHandlerMiddleware">
+            <summary> 
+            
+            </summary>
+        </member>
+        <member name="M:Utilitary.API.Controllers.Common.CustomExceptionHandlerMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate)">
+            <summary> 
+            
+            </summary>
+        </member>
+        <member name="M:Utilitary.API.Controllers.Common.CustomExceptionHandlerMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext)">
+            <summary> 
+            
+            </summary>
+        </member>
+        <member name="T:Utilitary.API.Controllers.Common.CustomExceptionHandlerMiddlewareExtensions">
+            <summary> 
+            
+            </summary>
+        </member>
+        <member name="M:Utilitary.API.Controllers.Common.CustomExceptionHandlerMiddlewareExtensions.UseCustomExceptionHandler(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary> 
+            
+            </summary>
+        </member>
+        <member name="T:Utilitary.API.Controllers.v1.AdministracionController">
+            <summary> 
+            
+            </summary>
+        </member>
+        <member name="M:Utilitary.API.Controllers.v1.AdministracionController.GetInfoUsuario(Utilitary.Core.Administracion.Queries.GetInfoUsuarioQry)">
+            <summary> 
+            
+            </summary>
+            <response code="200"> Retorna la información de los usuarios registrados </response>
+            <remark></remark>
+        </member>
+        <member name="M:Utilitary.API.Controllers.v1.AdministracionController.PostUsuarioNuevo(Utilitary.Core.Administracion.Commands.PostUsuarioCmd)">
+            <summary> 
+            Crear usuario
+            </summary>
+            <response code="200"> Guarda el usuario con su respectivo perfil </response>
+            <remark></remark>
+        </member>
+        <member name="M:Utilitary.API.Controllers.v1.AdministracionController.PostMateria(Utilitary.Core.Administracion.Queries.PostMateriaCmd)">
+            <summary> 
+            Crear usuario
+            </summary>
+            <response code="200"> Guarda el usuario con su respectivo perfil </response>
+            <remark></remark>
+        </member>
+        <member name="M:Utilitary.API.Controllers.v1.AdministracionController.GetMaterias(Utilitary.Core.Administracion.Queries.GetMateriasQry)">
+            <summary> 
+             Consulta las materias registradas
+            </summary>
+            <response code="200"> Consulta las materias en estado 1</response>
+            <remark></remark>
+        </member>
+        <member name="M:Utilitary.API.Controllers.v1.AdministracionController.GetCursos(Utilitary.Core.Administracion.Queries.GetCursosQry)">
+            <summary> 
+             Consulta los cursos registrados
+            </summary>
+            <response code="200"> Consulta los cursos con toda la informacion que corresponde</response>
+            <remark></remark>
+        </member>
+        <member name="M:Utilitary.API.Controllers.v1.AdministracionController.GetPasswordForget(Utilitary.Core.Administracion.Queries.GetUserPasswordQry)">
+            <summary> 
+            Recuperar contraseña
+            </summary>
+            <response code="200"> Retorna el Password desencriptado del usuario </response>
+            <remark></remark>
+        </member>
+        <member name="M:Utilitary.API.Controllers.v1.AdministracionController.DeleteUsuario(Utilitary.Core.Administracion.Commands.DeleteUsuarioCmd)">
+            <summary> 
+            Eliminar Usuario
+            </summary>
+            <response code="200"> Elimina el usuario por idUsuario </response>
+            <remark></remark>
+        </member>
+        <member name="M:Utilitary.API.Controllers.v1.AdministracionController.GetPerfiles">
+            <summary> 
+            Listado de Perfiles
+            </summary>
+            <response code="200"> Retorna el listado de todos los perfiles activos </response>
+            <remark></remark>
+        </member>
+        <member name="M:Utilitary.API.Controllers.v1.AdministracionController.GetInfoDocente(Utilitary.Core.Administracion.Queries.GetInfoDocenteQry)">
+            <summary> 
+            
+            </summary>
+            <response code="200"> Retorna la información de los docentes activos </response>
+            <remark></remark>
+        </member>
+        <member name="M:Utilitary.API.Controllers.v1.AdministracionController.PostCurso(Utilitary.Core.Administracion.Queries.PostCursoCmd)">
+            <summary> 
+            Crear curso
+            </summary>
+            <response code="200"> Guarda el curso asociando la materia al docente </response>
+            <remark></remark>
+        </member>
+        <member name="M:Utilitary.API.Controllers.v1.AdministracionController.PostCursoEstudiante(Utilitary.Core.Administracion.Queries.UpdateCursoCmd)">
+            <summary> 
+            Insertar curso
+            </summary>
+            <response code="200"> Agrega un deposito al cierre</response>
+            <remark></remark>
+        </member>
+        <member name="M:Utilitary.API.Controllers.v1.AdministracionController.GetDepositosRegistrados(Utilitary.Core.Administracion.Queries.GetCursosRegistradosQry)">
+            <summary> 
+            Listado de depositos por rango de fechas
+            </summary>
+            <response code="200"> Retorna el listado de depositos si tiene </response>
+            <remark></remark>
+        </member>
+        <member name="T:Utilitary.API.Controllers.v1.ApiRoutes">
+            <summary> 
+            
+            </summary>
+        </member>
+        <member name="F:Utilitary.API.Controllers.v1.ApiRoutes.Root">
+            <summary> 
+            
+            </summary>
+        </member>
+        <member name="F:Utilitary.API.Controllers.v1.ApiRoutes.Version">
+            <summary> 
+            
+            </summary>
+        </member>
+        <member name="F:Utilitary.API.Controllers.v1.ApiRoutes.Base">
+            <summary> 
+            
+            </summary>
+        </member>
+        <member name="T:Utilitary.API.Controllers.v1.ApiRoutes.Administracion">
+            <summary> 
+            Métodos para consultar la información del cierre de actividades diarias
+            </summary>
+        </member>
+        <member name="F:Utilitary.API.Controllers.v1.ApiRoutes.Administracion.GetInfoUsuario">
+            <summary> 
+            
+            </summary>
+        </member>
+        <member name="F:Utilitary.API.Controllers.v1.ApiRoutes.Administracion.GetPerfiles">
+            <summary> 
+            
+            </summary>
+        </member>
+        <member name="F:Utilitary.API.Controllers.v1.ApiRoutes.Administracion.PostUsuario">
+            <summary> 
+            Referencia URL que crea o edita un usuario con su perfil correspondiente
+            </summary>
+        </member>
+        <member name="F:Utilitary.API.Controllers.v1.ApiRoutes.Administracion.PostMateria">
+            <summary> 
+            Referencia URL que crea una materia
+            </summary>
+        </member>
+        <member name="F:Utilitary.API.Controllers.v1.ApiRoutes.Administracion.PostCurso">
+            <summary> 
+            Referencia URL que crea un curso
+            </summary>
+        </member>
+        <member name="F:Utilitary.API.Controllers.v1.ApiRoutes.Administracion.PostCursoEstudiante">
+            <summary> 
+            Referencia URL que crea un curso
+            </summary>
+        </member>
+        <member name="F:Utilitary.API.Controllers.v1.ApiRoutes.Administracion.GetCursosRegistrados">
+            <summary> 
+            
+            </summary>
+        </member>
+        <member name="F:Utilitary.API.Controllers.v1.ApiRoutes.Administracion.GetMaterias">
+            <summary> 
+            
+            </summary>
+        </member>
+        <member name="F:Utilitary.API.Controllers.v1.ApiRoutes.Administracion.GetCursos">
+            <summary> 
+            
+            </summary>
+        </member>
+        <member name="F:Utilitary.API.Controllers.v1.ApiRoutes.Administracion.DeleteUsuario">
+            <summary> 
+            
+            </summary>
+        </member>
+        <member name="F:Utilitary.API.Controllers.v1.ApiRoutes.Administracion.GetUserPassword">
+            <summary> 
+            
+            </summary>
+        </member>
+        <member name="F:Utilitary.API.Controllers.v1.ApiRoutes.Administracion.GetInfoDocente">
+            <summary> 
+            
+            </summary>
+        </member>
+        <member name="T:Utilitary.API.Controllers.v1.ApiRoutes.Login">
+            <summary> 
+            Métodos para consultar la información del usuario
+            </summary>
+        </member>
+        <member name="F:Utilitary.API.Controllers.v1.ApiRoutes.Login.GetLoginUser">
+            <summary> 
+            
+            </summary>
+        </member>
+        <member name="F:Utilitary.API.Controllers.v1.ApiRoutes.Login.UpdatePassword">
+            <summary> 
+            
+            </summary>
+        </member>
+        <member name="F:Utilitary.API.Controllers.v1.ApiRoutes.Login.GetPasswordForget">
+            <summary> 
+            
+            </summary>
+        </member>
+        <member name="F:Utilitary.API.Controllers.v1.ApiRoutes.Login.GetMenu">
+            <summary> 
+            
+            </summary>
+        </member>
+        <member name="T:Utilitary.API.Controllers.v1.ApiRoutes.DashBoard">
+            <summary> 
+            Métodos para consultar la información del dashboard al momento de loguearse en el aplicativo
+            </summary>
+        </member>
+        <member name="F:Utilitary.API.Controllers.v1.ApiRoutes.DashBoard.GetPersonasCurso">
+            <summary> 
+            
+            </summary>
+        </member>
+        <member name="F:Utilitary.API.Controllers.v1.ApiRoutes.DashBoard.GetCantidadCurso">
+            <summary> 
+            
+            </summary>
+        </member>
+        <member name="T:Utilitary.API.Controllers.v1.DashBoardController">
+            <summary> 
+            
+            </summary>
+        </member>
+        <member name="M:Utilitary.API.Controllers.v1.DashBoardController.GetPersonasCurso(Utilitary.Core.DashBoard.Queries.GetPersonasCursoQry)">
+            <summary> 
+            Obtiene la cantidad de personas del curso
+            </summary>
+            <response code="200"> Retorna la información de los cursos  </response>
+            <remark></remark>
+        </member>
+        <member name="M:Utilitary.API.Controllers.v1.DashBoardController.GetCantidadCurso(Utilitary.Core.DashBoard.Queries.GetCantidadCursoQry)">
+            <summary> 
+            Retorna la cantidad de personas en el curso
+            </summary>
+            <response code="200"> Retorna la informacion del curso </response>
+            <remark></remark>
+        </member>
+        <member name="T:Utilitary.API.Controllers.v1.EstudiantesController">
+            <summary> 
+            
+            </summary>
+        </member>
+        <member name="M:Utilitary.API.Controllers.v1.EstudiantesController.GetLoginUser(Utilitary.Core.Estudiantes.Queries.GetLoginUserQry)">
+            <summary> 
+            login del usuario
+            </summary>
+            <response code="200"> Retorna la información del usuario logueado </response>
+            <remark></remark>
+        </member>
+        <member name="M:Utilitary.API.Controllers.v1.EstudiantesController.UpdatePasswordUser(Utilitary.Core.Estudiantes.Commands.UpdatePasswordCmd)">
+            <summary> 
+            Cambiar contraseña
+            </summary>
+            <response code="200"> Actualiza la contraseña al usuario </response>
+            <remark></remark>
+        </member>
+        <member name="M:Utilitary.API.Controllers.v1.EstudiantesController.GetPasswordForget(Utilitary.Core.Estudiantes.Queries.GetPasswordForgetQry)">
+            <summary> 
+            Recuperar contraseña
+            </summary>
+            <response code="200"> Retorna el Password desencriptado y envía correo de recuperación al usuario </response>
+            <remark></remark>
+        </member>
+        <member name="M:Utilitary.API.Controllers.v1.EstudiantesController.GetMenu(Utilitary.Core.Estudiantes.Queries.GetMenuQry)">
+            <summary> 
+            Consultar menu
+            </summary>
+            <response code="200"> Consulta menu y submenu por usuario</response>
+            <remark></remark>
+        </member>
+        <member name="T:Utilitary.API.Parameterization.SwaggerOptions">
+            <summary> 
+            
+            </summary>
+        </member>
+        <member name="P:Utilitary.API.Parameterization.SwaggerOptions.JsonRoute">
+            <summary> 
+            
+            </summary>
+        </member>
+        <member name="P:Utilitary.API.Parameterization.SwaggerOptions.Description">
+            <summary> 
+            
+            </summary>
+        </member>
+        <member name="P:Utilitary.API.Parameterization.SwaggerOptions.UiEndpoint">
+            <summary> 
+            
+            </summary>
+        </member>
+        <member name="T:Utilitary.API.Program">
+            <summary> 
+            
+            </summary>
+        </member>
+        <member name="M:Utilitary.API.Program.Main(System.String[])">
+            <summary> 
+            
+            </summary>
+        </member>
+        <member name="M:Utilitary.API.Program.CreateHostBuilder(System.String[])">
+            <summary> 
+            
+            </summary>
+        </member>
+        <member name="T:Utilitary.API.Startup">
+            <summary> 
+            
+            </summary>
+        </member>
+        <member name="P:Utilitary.API.Startup.Configuration">
+            <summary> 
+            
+            </summary>
+        </member>
+        <member name="M:Utilitary.API.Startup.#ctor(Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary> 
+            
+            </summary>
+        </member>
+        <member name="M:Utilitary.API.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary> 
+            
+            </summary>
+        </member>
+        <member name="M:Utilitary.API.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary> 
+            
+            </summary>
+        </member>
+    </members>
+</doc>
